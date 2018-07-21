@@ -1,0 +1,13 @@
+<!-- Generated template for the MovieCardComponent component -->
+
+<ion-card-content (click)="movieClicked(movie)">
+    <div class="img-container">
+        <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path " />
+      </div>
+    <ion-card-title>
+        {{movie.original_title}}
+      </ion-card-title>
+    <p>
+        {{movie.overview}}
+    </p>
+  </ion-card-content>
